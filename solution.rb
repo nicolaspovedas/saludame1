@@ -1,6 +1,6 @@
-require "sinatra"
+require 'sinatra'
 
-get / do
- @name: params[:name]
+get '/' do
+ @name = params[:name]
  erb :index
 end
